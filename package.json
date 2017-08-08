@@ -1,0 +1,12 @@
+{
+  "name": "farahmand-req-header-parser",
+  "version": "1.0.0",
+  "description" : "Request Header Parser Microservice | Farahmand Moslemi | Part 2 of Free Code Camp Backend Challenges",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=4.4.5"
+  }
+}
