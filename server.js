@@ -5,7 +5,6 @@
 var http = require('http'),
   url = require('url');
 
-
 var server = http.createServer(function(req, res) {
   if (url.parse(req.url).pathname === '/') {
     var data, ip, lang, sw;
