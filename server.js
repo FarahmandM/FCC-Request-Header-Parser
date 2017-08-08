@@ -15,7 +15,7 @@ var server = http.createServer(function(req, res) {
     if (ip && lang && sw) {
       var m;
       if (m = ip.match(/^((\d{1,3}\.){3}\d{1,3})/)) {
-        ip = m[1];
+        ip = m[0];
       }
       if (m = lang.match(/(\w{2}\-\w{2})/i)) {
         lang = m[0];
@@ -41,5 +41,5 @@ var server = http.createServer(function(req, res) {
     res.end('404 - Not Found!');
   }
 });
-process.env.PORT = '13000';
+//process.env.PORT = '13000';
 server.listen(parseInt(process.env.PORT));
